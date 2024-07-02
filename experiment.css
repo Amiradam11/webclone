@@ -1,0 +1,690 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+
+.section-one {
+    text-decoration: underline;
+    padding-top: 20px;
+    height: 5vh;
+    background-color: #eee;
+    /* First color */
+}
+
+.section-two {
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    height: 300vh;
+    /* Second color */
+}
+
+
+.containerone {
+    display: flex;
+    justify-self: start;
+    gap: 210px;
+    font-size: 15px;
+    padding-left: 1px;
+}
+
+
+.logo {
+    float: left;
+    max-width: 100px;
+    height: auto;
+    padding: 0px;
+}
+
+.navbar {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+
+.navbar .nav-linkss {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.navbar .nav-linkss li {
+    display: inline;
+    margin-left: 20px;
+    text-align: center;
+
+}
+
+
+.navbar .nav-linkss li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: small;
+    opacity: 0.9;
+}
+
+.navbar .nav-linksss li {
+    display: inline;
+    margin-left: 10px;
+    text-align: center;
+
+}
+
+.navbar .nav-linksss li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/*justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 25px;
+    /* Add border radius for curved edges */
+/* background-color: #f8f8f8;
+    /* Background color of the search bar */
+/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+/* transition: box-shadow 0.3s ease;*/
+/* Smooth transition for the shadow */
+/*padding-left: 200px;
+    padding-right: 20px;*/
+
+
+/* 
+.search-bar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.search-bar .bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0.5rem;
+    padding-bottom: 0.3rem;
+
+}
+
+.search-bar-item label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-left: 0.5rem;
+    color: #333;
+
+}
+
+
+
+.search-bar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Larger shadow on hover */
+
+
+
+
+.solid {
+    display: flex;
+    border-style: solid;
+    box-shadow: #eee;
+    border-color: #eee;
+    border-width: 2px;
+    border-radius: 90000000000px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 230px;
+    margin-right: 4px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: white;
+    width: 800px;
+    height: 15px;
+}
+
+
+.vertical-line {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+    margin: auto auto;
+}
+
+.search-bar-item input {
+    background-color: white;
+    border: 0;
+    padding-top: -100px;
+}
+
+.button {
+    background-color: #e4434b;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: -10px;
+    margin-right: -15px;
+}
+
+.icon-red {
+    background-color: #e4434b;
+    color: white;
+    border-radius: 50px;
+}
+
+.user-icon {
+    border-radius: 50px;
+    font-size: larger;
+}
+
+
+/* styles.css */
+
+
+
+#menuBtn {
+    padding: 10px 20px;
+    background-color: #eee;
+    color: rgb(33, 30, 30);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-indent: 100% 10px;
+    font-size: larger;
+}
+
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 145px;
+    left: 980px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 250px;
+    height: 220px;
+}
+
+#dropdownMenu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#dropdownMenu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+
+
+/* styles.css */
+
+
+
+#loginBtn {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* width: fit-content; */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    background-color: #eee;
+    color: #eee;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-container {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    white-space: nowrap;
+    /* Prevents the items from wrapping */
+    scroll-behavior: smooth;
+    /* Optional: smooth scrolling */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon-item {
+    display: inline-block;
+    /* Keeps items in a single line */
+    flex: 0 0 auto;
+    /* Prevents flex items from shrinking */
+    text-align: center;
+    margin-right: 20px;
+    /* Space between items */
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-item i {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.containerfour {
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px;
+    padding-left: 28px;
+    padding-top: 50px;
+    gap: 10px;
+    row-gap: 45px;
+
+}
+
+.containerfour div {
+    border: none;
+
+}
+
+
+.listing-item img {
+    width: 100%;
+    height: 80%;
+    /* Make the image fill the grid item */
+    border-radius: 9px;
+    /* Optional: rounded corners */
+}
+
+.listing-item h1 {
+    margin-top: 10px;
+    /* Space between image and note */
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+.inspiration {
+    padding: 40px 20px;
+    background-color: #eee;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.inspiration h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.categories {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 1px;
+    overflow: hidden;
+    /* Enables horizontal scrolling */
+    white-space: nowrap;
+
+}
+
+.category-btn {
+    padding: 10px 1px;
+    margin: 0 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    gap: -10px;
+    opacity: 0.8;
+
+}
+
+.options-grid {
+    padding-left: 20px;
+    justify-content: start;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px 190px 190px;
+    grid-template-rows: 60px 60px;
+    gap: 1px;
+    max-width: 1200px;
+    margin: 1px;
+}
+
+.option {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding: 1px;
+    font-size: 12px;
+    color: #333;
+}
+
+.option:hover {
+    cursor: pointer;
+    ;
+}
+
+.option .main-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.option .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.active {
+    border-bottom: 2px solid black;
+    border-radius: 1px;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerthree {
+    display: flex;
+    justify-self: start;
+    gap: 100px;
+    font-size: 15px;
+    opacity: 0.7;
+    padding-left: 20px;
+}
+
+.listingone {
+    text-align: left;
+    list-style: none;
+}
+
+.listingone li a {
+    font-weight: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.listingtwo {
+    text-align: left;
+    list-style: none;
+}
+
+.listingtwo li a {
+    font-weight: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.listingthree {
+    text-align: left;
+    list-style: none;
+}
+
+.listingthree li a {
+    font-weight: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.listingone,
+.listingtwo,
+.listingthree {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbarfour {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right: 30px;
+    /* Optional: Adjust spacing between navbar items */
+}
+
+.navbarfour .footerleft li {
+    display: inline;
+}
+
+.navbarfour .footerleft li a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+
+}
+
+.navbarfour .footerright li {
+    display: inline;
+    text-align: right;
+    align-items: center;
+}
+
+.navbarfour .footerright li a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.gllogoo {
+    width: 19px;
+    height: 15px;
+}
+
+
+.fclogoo {
+    width: 30px;
+    height: 30px;
+}
+
+.twlogoo {
+    width: 35px;
+    height: 20px;
+}
+
+.iglogoo {
+    width: 19px;
+    height: 20px;
+}
+
+
+
+
+
+hr.hrone {
+    opacity: 0.3;
+}
+
+
+hr.styled-hr {
+    width: 95%;
+    border: 0;
+    height: 1px;
+    background: black;
+    /* Space above and below the line */
+    margin: 10px auto;
+    /* Adds shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.3;
+}

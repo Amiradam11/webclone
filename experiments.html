@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="experiment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="section section-one">
+        <center>Learn more about Icons </center>
+    </div>
+
+
+    <div class="section section-two">
+
+
+        <nav class="navbar">
+            <div class="containerone">
+
+                <div>
+                    <ul class="nav-links">
+                        <img src="logo.png" alt="Airbnb" class="logo">
+                    </ul>
+                </div>
+                <!-- Navigation links -->
+
+                <div>
+                    <ul class="nav-linkss">
+                        <li><a href="#">Stays</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Online Experiences</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="nav-linksss">
+                        <li><a href="#">Airbnb your home</a></li>
+                        <li><i class="fa-regular fa-globe"></i></li>
+                        <li> <button id="menuBtn">
+                                <i class="fa-solid fa-bars"></i>
+                                <i class="fa-solid fa-circle-user"></i>
+                            </button></li>
+                        <div id="dropdownMenu" class="dropdown-menu">
+                            <a href="#">Sign up</a>
+                            <a href="#">
+                                <div id="loginBtn" onclick="loginModal()">Log In</div>
+
+                                <div id="loginPopup" class="popup">
+                                    <div class="popup-content">
+                                        <span class="close" id="closeBtn">&times;</span>
+                                        <h3>Log In</h3>
+                                        <hr>
+                                        <form>
+                                            <h1>Welcom to Airbnb</h1><br>
+                                            <label for="number">Number:</label>
+                                            <input type="tel" id="number" name="" required>
+                                            <label for="password">Password:</label>
+                                            <input type="password" id="password" name="password" required>
+                                            <button type="submit">Log In</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="noone">
+                            <a href="#">Gift cards</a>
+                            <a href="#">Airbnb your home</a>
+                            <a href="#">Help Center</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+        <!-- <section class="search-bar-section">
+            <form class="search-bar">
+                <div class="search-bar-item">
+                    <label for="where">Where</label>
+                    <input type="text" id="where" name="where" placeholder="Search destinations">
+                </div>
+                <div class="search-bar-item">
+                    <label for="check-in">Check-In</label>
+                    <input type="date" id="check-in" onblur="(this, type='text')" onfocus="(this.type='data')  placeholder="Add dates">
+                </div>
+                <div class="search-bar-item">
+                    <label for="check-out">Check-Out</label>
+                    <input type="date" id="check-out" name="check-out">
+                </div>
+                <div class="search-bar-item">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </section> -->
+
+        <div class="solid">
+            <div class="search-bar-item">
+                <label for="where">Where</label><br>
+                <input type="text" id="where" name="where" placeholder="Search destinations">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="search-bar-item">
+                <label for="check-in">Check-In</label><br>
+                <input type="text" id="check-in" name="check-in" placeholder="Add dates" onfocus="(this.type='date')"
+                    onblur="(this.type='text')">
+            </div>
+            <div class=" vertical-line">
+            </div>
+            <div class="search-bar-item">
+                <label for="check-out">Check-Out</label><br>
+                <input type="text" id="check-out" name="check-out" placeholder="Add dates" onfocus="(this.type='date')"
+                    onblur="(this.type='text')">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="search-bar-item">
+                <button type="submit" class="button"><i
+                        class="fa-sharp fa-solid fa-magnifying-glass icon-red"></i></i></button>
+            </div>
+        </div>
+
+
+
+        <div class="icon-container">
+            <div class="icon-item">
+                <i class="fas fa-home"></i>
+                <p>Room</p>
+            </div>
+            <div class="icon-item">
+                <p>Beroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fa-solid fa-bed"></i>
+                <p>Bathroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fa-solid fa-bed"></i>
+                <p>Kitchen</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-bed"></i>
+                <p>Bedroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-shower"></i>
+                <p>Bathroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-utensils"></i>
+                <p>Kitchen</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-home"></i>
+                <p>Room</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-bed"></i>
+                <p>Bedroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-shower"></i>
+                <p>Bathroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-utensils"></i>
+                <p>Kitchen</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-home"></i>
+                <p>Room</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-bed"></i>
+                <p>Bedroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-shower"></i>
+                <p>Bathrooms</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-utensils"></i>
+                <p>Kitchen</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-home"></i>
+                <p>Room</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-home"></i>
+                <p>Bedroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-shower"></i>
+                <p>Bathroom</p>
+            </div>
+            <div class="icon-item">
+                <i class="fas fa-utensils"></i>
+                <p>Kitchen</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Featured listings section -->
+        <div class="containerfour">
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+            <div class="listing-item">
+                <img src="Listing1.jpg" alt="Listing 1">
+                <h3>Cozy Cabin in the Woods</h3>
+                <p>$100/night</p>
+            </div>
+
+
+        </div>
+        <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+<footer>
+
+    <section class="inspiration">
+        <h2>Inspiration for Future Getaways</h2>
+        <div class="categories">
+            <button class="category-btn" data-category="popular">Popular</button>
+            <button class="category-btn" data-category="art-culture">Art & Culture</button>
+            <button class="category-btn" data-category="outdoors">Outdoors</button>
+            <button class="category-btn" data-category="mountains">Mountains</button>
+            <button class="category-btn" data-category="beach">Beach</button>
+            <button class="category-btn" data-category="unique stays">Unique stays</button>
+            <button class="category-btn" data-category="categories">Categories</button>
+            <button class="category-btn" data-category="things to do">Things to do</button>
+            <button class="category-btn" data-category="travel tips & inspiration">Travel tips & inspiration</button>
+            <button class="category-btn" data-category="airbnb-friendly apartments">Airbnb-friendly apartments</button>
+        </div>
+
+        <hr class="hrone">
+        <br>
+
+        <div class="options-grid" id="optionsGrid">
+        </div>
+    </section>
+
+
+    <hr class="hrone"><br>
+
+    <section>
+        <div class="containerthree">
+            <div>
+                <ul class="listingone">
+                    <li><strong><a href="#">Support</a></strong></li><br>
+                    <li><a href="#">Help center</a></li><br>
+                    <li><a href="#">Aircover</a></li><br>
+                    <li><a href="#">Anti-discrimination</a></li><br>
+                    <li><a href="#">Disability support</a></li><br>
+                    <li><a href="#">Cancellation options</a></li><br>
+                    <li><a href="#">Report neighborhood concern</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="listingtwo">
+                    <li><strong><a href="#">Hosting</a></strong></li><br>
+                    <li><a href="#">Airbnb your home</a></li><br>
+                    <li><a href="#">AirCover fot Hosts</a></li><br>
+                    <li><a href="#">Hosting resources</a></li><br>
+                    <li><a href="#">Community form</a></li><br>
+                    <li><a href="#"></a>Hosting responsibly</li><br>
+                    <li><a href="#">Airbnb-friendly apartments</a></li><br>
+                    <li><a href="#">Join a free hosting class</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="listingthree">
+                    <li><strong><a href="#">Airbnb</a></strong></li><br>
+                    <li><a href="#">Newsroom</a></li><br>
+                    <li><a href="#">New features</a></li><br>
+                    <li><a href="#">Careers</a></li><br>
+                    <li><a href="#">Investors</a></li><br>
+                    <li><a href="#">Gift cards</a></li><br>
+                    <li><a href="#">Airbnb.org emergency stays</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br>
+    <hr class="styled-hr">
+
+
+    <nav class="navbarfour">
+        <div class="footerleft">
+            <ul>
+                <li><a href="#">© 2024 Airbnb, Inc.</a></li>
+                <li class="separator">•</li>
+                <li><a href="#"> Terms</a></li>
+                <li class="separator">•</li>
+                <li><a href="#">Sitemap</a></li>
+                <li class="separator">•</li>
+                <li><a href="#">Privacy</a></li>
+                <li class="separator">•</li>
+                <li><a href="#">Your privacy choices</a></li>
+            </ul>
+        </div>
+        <div class="footerright">
+            <ul>
+                <i class="fa-regular fa-globe"></i>
+                <li><a href="#"> English(US)</a></li>
+                <li><a href="#"> <strong>$</strong> USD</a></li>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+
+            </ul>
+        </div>
+    </nav>
+    <script src="experiment.js"></script>
+</footer>
+
+</html>
