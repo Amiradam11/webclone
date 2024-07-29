@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +14,12 @@
 
 </head>
 
-<body>
-
-    <div class="section section-one">
-        <center>Learn more about Icons </center>
-    </div>
+<body class="section section-one">
 
 
-    <div class="section section-two">
+
+
+    <div class="section section">
 
 
         <nav class="navbar">
@@ -57,16 +56,45 @@
                                 <div id="loginPopup" class="popup">
                                     <div class="popup-content">
                                         <span class="close" id="closeBtn">&times;</span>
-                                        <h3>Log In</h3>
-                                        <hr>
+
+                                        <hr class="hrtwo">
                                         <form>
-                                            <h1>Welcom to Airbnb</h1><br>
-                                            <label for="number">Number:</label>
-                                            <input type="tel" id="number" name="" required>
-                                            <label for="password">Password:</label>
-                                            <input type="password" id="password" name="password" required>
-                                            <button type="submit">Log In</button>
-                                        </form>
+
+
+                                            <h2>Welcome to Airbnb</h2>
+                                            <form>
+                                                <div class="input-group">
+                                                    <label for="country-code">Country code</label><br>
+
+                                                    <select id="country-code">
+                                                        <option value="+1">United States (+1)</option>
+                                                        <!-- Add more country options as needed -->
+                                                    </select>
+                                                </div>
+                                                <div class="input-group">
+                                                    <label for="phone-number">Phone number <br> <input type="tel"
+                                                            id="phone-number" name="phone-number" required></label>
+                                                    <input type="tel" id="phone-number" name="phone-number" required>
+                                                </div>
+                                                <p>We’ll call or text you to confirm your number. Standard message and
+                                                    data rates apply.Privacy Policy</p>
+                                                <button type="submit" class="submit-button">Continue</button>
+                                                <hr>
+                                                <button type="button" class="social-button facebook">
+                                                    <div class="ic"> <i class="fa-brands fa-square-facebook"></i></div>
+                                                    <div class="ico"> Continue with Facebook </div>
+
+                                                </button>
+                                                <button type="button" class="social-button google">
+                                                    <div class="ic"><i class="fa-brands fa-google"></i> </div>
+                                                    <div class="ico">Continue with
+                                                        Google </div>
+                                                </button>
+
+                                            </form>
+
+
+
                                     </div>
                                 </div>
                             </a>
@@ -110,27 +138,32 @@
         <div class="solid">
             <div class="search-bar-item">
                 <label for="where">Where</label><br>
-                <input type="text" id="where" name="where" placeholder="Search destinations">
+                <input class="search-bar-item" type="text" id="where" name="where" placeholder="Search destinations">
             </div>
             <div class="vertical-line"></div>
             <div class="search-bar-item">
                 <label for="check-in">Check-In</label><br>
-                <input type="text" id="check-in" name="check-in" placeholder="Add dates" onfocus="(this.type='date')"
-                    onblur="(this.type='text')">
+                <input class="search-bar-item" type="text" id="check-in" name="check-in" placeholder="Add dates"
+                    onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
             <div class=" vertical-line">
             </div>
             <div class="search-bar-item">
                 <label for="check-out">Check-Out</label><br>
-                <input type="text" id="check-out" name="check-out" placeholder="Add dates" onfocus="(this.type='date')"
-                    onblur="(this.type='text')">
+                <input class="search-bar-item" type="text" id="check-out" name="check-out" placeholder="Add dates"
+                    onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
-            <div class="vertical-line"></div>
             <div class="search-bar-item">
                 <button type="submit" class="button"><i
                         class="fa-sharp fa-solid fa-magnifying-glass icon-red"></i></i></button>
             </div>
         </div>
+
+
+
+
+
+
 
 
 
@@ -222,123 +255,149 @@
 
 
         <!-- Featured listings section -->
-        <div class="containerfour">
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
+        <div class="containerfourparent">
+            <div class="">
+                <div class="images-content">
+                    <div class="containerfour">
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+                        <div class="listing-item">
+                            <img src="Listing1.jpg" alt="Listing 1">
+                            <h3>Cozy Cabin in the Woods</h3>
+                            <p class="img-detailss">Hosted by Doja Cat</p>
+                            <p class="img-details">Coming Soon</p>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-            <div class="listing-item">
-                <img src="Listing1.jpg" alt="Listing 1">
-                <h3>Cozy Cabin in the Woods</h3>
-                <p>$100/night</p>
-            </div>
-
-
         </div>
+
         <br><br><br>
 
 
@@ -354,27 +413,28 @@
 
 
     </div>
+
 </body>
 
 
 
 
 
-<footer>
+<footer class="section section-two">
 
     <section class="inspiration">
         <h2>Inspiration for Future Getaways</h2>
         <div class="categories">
-            <button class="category-btn" data-category="popular">Popular</button>
-            <button class="category-btn" data-category="art-culture">Art & Culture</button>
-            <button class="category-btn" data-category="outdoors">Outdoors</button>
-            <button class="category-btn" data-category="mountains">Mountains</button>
-            <button class="category-btn" data-category="beach">Beach</button>
-            <button class="category-btn" data-category="unique stays">Unique stays</button>
-            <button class="category-btn" data-category="categories">Categories</button>
-            <button class="category-btn" data-category="things to do">Things to do</button>
-            <button class="category-btn" data-category="travel tips & inspiration">Travel tips & inspiration</button>
-            <button class="category-btn" data-category="airbnb-friendly apartments">Airbnb-friendly apartments</button>
+            <div class="category-btn" data-category="popular">Popular</div>
+            <div class="category-btn" data-category="art-culture">Art & Culture</div>
+            <div class="category-btn" data-category="outdoors">Outdoors</div>
+            <div class="category-btn" data-category="mountains">Mountains</div>
+            <div class="category-btn" data-category="beach">Beach</div>
+            <div class="category-btn" data-category="unique stays">Unique stays</div>
+            <div class="category-btn" data-category="categories">Categories</div>
+            <div class="category-btn" data-category="things to do">Things to do</div>
+            <div class="category-btn" data-category="travel tips & inspiration">Travel tips & inspiration</div>
+            <div class="category-btn" data-category="airbnb-friendly apartments">Airbnb-friendly apartments</div>
         </div>
 
         <hr class="hrone">
